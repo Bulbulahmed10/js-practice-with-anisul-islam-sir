@@ -45,3 +45,6 @@ document.write(num1 + ' * ' + num2 + ' = '+multiplication + '</br>')
 
 division = num1 / num2
 document.write(num1 + ' / ' + num2 + ' = '+division + '</br>')
+
+rem = num1 % num2
+document.write(num1 + ' % ' + num2 + ' = '+rem + '</br>')
