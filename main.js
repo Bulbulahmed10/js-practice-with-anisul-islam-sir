@@ -49,65 +49,77 @@
  area of shapes
  */
 
- var base = parseFloat(prompt('Enter First Input :'))
- var height = parseFloat(prompt('Enter Second Input :'))
+//  var base = parseFloat(prompt('Enter First Input :'))
+//  var height = parseFloat(prompt('Enter Second Input :'))
 
- square = base * height
- document.write('Total Square Area' + ' = ' + square + '</br>')
+//  square = base * height
+//  document.write('Total Square Area' + ' = ' + square + '</br>')
 
- rectangle = base * height
- document.write('Total Rectangle Area' + ' = ' + rectangle + '</br>')
+//  rectangle = base * height
+//  document.write('Total Rectangle Area' + ' = ' + rectangle + '</br>')
 
- triangle = (base * height) / 2
- document.write('Total Square Area' + ' = ' + triangle + '</br')
+//  triangle = (base * height) / 2
+//  document.write('Total Square Area' + ' = ' + triangle + '</br')
 
- var trapezoidBase1 = parseFloat(prompt('Please enter base1 of trapezoid :'))
- var trapezoidBase2 = parseFloat(prompt('Please enter base2 of trapezoid :'))
- var trapezoidHeight = parseFloat(prompt('Please enter height of trapezoid :'))
+//  var trapezoidBase1 = parseFloat(prompt('Please enter base1 of trapezoid :'))
+//  var trapezoidBase2 = parseFloat(prompt('Please enter base2 of trapezoid :'))
+//  var trapezoidHeight = parseFloat(prompt('Please enter height of trapezoid :'))
 
- areaOfTrapezoid = (trapezoidBase1 + trapezoidBase2) * trapezoidHeight /2
- document.write('Total Trapezoid Area' + ' = ' + areaOfTrapezoid + '</br')
+//  areaOfTrapezoid = (trapezoidBase1 + trapezoidBase2) * trapezoidHeight /2
+//  document.write('Total Trapezoid Area' + ' = ' + areaOfTrapezoid + '</br')
 
- var farn = parseFloat(prompt('Enter Fahrenheit :'))
+//  var farn = parseFloat(prompt('Enter Fahrenheit :'))
 
- cels = (farn-32) * (5/9)
+//  cels = (farn-32) * (5/9)
 
- document.write('celsius : ' + cels)
+//  document.write('celsius : ' + cels)
 
 /*
  letter grading
  */
 
-var num = parseInt(prompt("Enter Result Number"));
+// var num = parseInt(prompt("Enter Result Number"));
 
-if (num >= 80) {
-  document.write("You Got : A+");
-} else if (num >= 70) {
-  document.write("You Got : A");
-} else if (num >= 60) {
-  document.write("You Got : A-");
-} else if (num >= 50) {
-  document.write("You Got : B");
-} else if (num >= 40) {
-  document.write("You Got: C");
-} else if (num >= 33) {
-  document.write("You Got : D");
-} else if (num > 100 || num < 0) {
-  document.write("Invalid Marks");
-} else {
-  document.write("You Fail");
-}
+// if (num >= 80) {
+//   document.write("You Got : A+");
+// } else if (num >= 70) {
+//   document.write("You Got : A");
+// } else if (num >= 60) {
+//   document.write("You Got : A-");
+// } else if (num >= 50) {
+//   document.write("You Got : B");
+// } else if (num >= 40) {
+//   document.write("You Got: C");
+// } else if (num >= 33) {
+//   document.write("You Got : D");
+// } else if (num > 100 || num < 0) {
+//   document.write("Invalid Marks");
+// } else {
+//   document.write("You Fail");
+// }
 
 /*
  identify large number
  */
 
-var num1 = prompt("Enter Number 1 : ");
-var num2 = prompt("Enter Number 2 : ");
-var num3 = prompt("Enter Number 3 : ");
+// var num1 = prompt("Enter Number 1 : ");
+// var num2 = prompt("Enter Number 2 : ");
+// var num3 = prompt("Enter Number 3 : ");
 
-if (num1 > num2 && num1 > num3) {
-  document.write("Large Number 1 = "  + num1);
-} else if (num2 > num1 && num2 > num3) {
-  document.write("Large Number 2 = "  + num2);
-} else document.write("Large Number 3 = "  + num3)
+// if (num1 > num2 && num1 > num3) {
+//   document.write("Large Number 1 = "  + num1);
+// } else if (num2 > num1 && num2 > num3) {
+//   document.write("Large Number 2 = "  + num2);
+// } else document.write("Large Number 3 = "  + num3)
+
+/*
+ identify Vowel & Consonant
+ */
+
+ var letter = prompt('Enter a Letter : ')
+
+ letter.toLowerCase()
+
+ if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+  document.write('This is a Vowel letter : ' + letter + '</br>')
+ } else document.write('This is a Consonant letter : ' + letter )
