@@ -130,61 +130,112 @@
 
 // switch, case, break, default
 
-var digit = prompt("Enter any digit: ");
+// var digit = prompt("Enter any digit: ");
 
-switch (digit) {
-  case "0":
-    document.write("Zero");
-    break
-  case "1":
-    document.write("One");
-    break
+// switch (digit) {
+//   case "0":
+//     document.write("Zero");
+//     break
+//   case "1":
+//     document.write("One");
+//     break
 
-  case "2":
-    document.write("Two");
-    break
+//   case "2":
+//     document.write("Two");
+//     break
 
-  case "3":
-    document.write("Three");
-    break
+//   case "3":
+//     document.write("Three");
+//     break
 
-  case "4":
-    document.write("Four");
-    break
+//   case "4":
+//     document.write("Four");
+//     break
 
-  case "5":
-    document.write("Five");
-    break
+//   case "5":
+//     document.write("Five");
+//     break
 
-    default:
-      document.write('Please Provide a Valid Number (1-5)')
-}
+//     default:
+//       document.write('Please Provide a Valid Number (1-5)')
+// }
 
 // task 5----- input a letter and check it is vowel or consonant using switch.
 
-var identify = prompt('Enter a letter: ')
- identify = identify.toLowerCase()
+// var identify = prompt('Enter a letter: ')
+//  identify = identify.toLowerCase()
 
-switch (identify) {
-  case 'a':
-    document.write('Vowel')
-    break
+// switch (identify) {
+//   case 'a':
+//     document.write('Vowel')
+//     break
 
-    case 'e':
-    document.write('Vowel')
-    break
+//     case 'e':
+//     document.write('Vowel')
+//     break
 
-    case 'i':
-    document.write('Vowel')
-    break
+//     case 'i':
+//     document.write('Vowel')
+//     break
 
-    case 'o':
-    document.write('Vowel')
-    break
+//     case 'o':
+//     document.write('Vowel')
+//     break
 
-    case 'u':
-    document.write('Vowel')
-    
-    default:
-      document.write('Consonant')
+//     case 'u':
+//     document.write('Vowel')
+
+//     default:
+//       document.write('Consonant')
+// }
+
+/*
+ Loop in javascript
+ */
+
+// for loop //
+
+ for (var i = 100; i >= 1; i--) {
+  if (i % 2 == 1) {
+    document.write(' ' + i)
+  }
+ }
+var n = parseInt(prompt('Enter the starting number: '));
+var m = parseInt(prompt('Enter the ending number: '));
+var sum = 0;
+
+for (var i = n; i <= m; i++) {
+  sum = sum + i
 }
+
+document.write(sum);
+
+//while loop//
+
+var i = 1
+
+while(i <= 10) {
+
+  document.write(' '+ i)
+
+  i++;
+}
+
+sum = 0;
+
+for (i = 1; i <= 50; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    sum += i;
+  }
+}
+
+document.write(sum);
+
+// do while loop//
+
+var i = 1
+
+do{
+  document.write(i)
+  i++
+} while (i <= 10)
