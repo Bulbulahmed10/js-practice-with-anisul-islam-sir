@@ -116,10 +116,75 @@
  identify Vowel & Consonant
  */
 
- var letter = prompt('Enter a Letter : ')
+//  var letter = prompt('Enter a Letter : ')
 
- letter.toLowerCase()
+//  letter.toLowerCase()
 
- if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
-  document.write('This is a Vowel letter : ' + letter + '</br>')
- } else document.write('This is a Consonant letter : ' + letter )
+//  if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+//   document.write('This is a Vowel letter : ' + letter + '</br>')
+//  } else document.write('This is a Consonant letter : ' + letter )
+
+/*
+ switch
+ */
+
+// switch, case, break, default
+
+var digit = prompt("Enter any digit: ");
+
+switch (digit) {
+  case "0":
+    document.write("Zero");
+    break
+  case "1":
+    document.write("One");
+    break
+
+  case "2":
+    document.write("Two");
+    break
+
+  case "3":
+    document.write("Three");
+    break
+
+  case "4":
+    document.write("Four");
+    break
+
+  case "5":
+    document.write("Five");
+    break
+
+    default:
+      document.write('Please Provide a Valid Number (1-5)')
+}
+
+// task 5----- input a letter and check it is vowel or consonant using switch.
+
+var identify = prompt('Enter a letter: ')
+ identify = identify.toLowerCase()
+
+switch (identify) {
+  case 'a':
+    document.write('Vowel')
+    break
+
+    case 'e':
+    document.write('Vowel')
+    break
+
+    case 'i':
+    document.write('Vowel')
+    break
+
+    case 'o':
+    document.write('Vowel')
+    break
+
+    case 'u':
+    document.write('Vowel')
+    
+    default:
+      document.write('Consonant')
+}
