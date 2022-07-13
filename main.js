@@ -195,47 +195,62 @@
 
 // for loop //
 
- for (var i = 100; i >= 1; i--) {
-  if (i % 2 == 1) {
-    document.write(' ' + i)
-  }
- }
-var n = parseInt(prompt('Enter the starting number: '));
-var m = parseInt(prompt('Enter the ending number: '));
-var sum = 0;
+//  for (var i = 100; i >= 1; i--) {
+//   if (i % 2 == 1) {
+//     document.write(' ' + i)
+//   }
+//  }
+// var n = parseInt(prompt('Enter the starting number: '));
+// var m = parseInt(prompt('Enter the ending number: '));
+// var sum = 0;
 
-for (var i = n; i <= m; i++) {
-  sum = sum + i
-}
+// for (var i = n; i <= m; i++) {
+//   sum = sum + i
+// }
 
-document.write(sum);
+// document.write(sum);
 
 //while loop//
 
-var i = 1
+// var i = 1
 
-while(i <= 10) {
+// while(i <= 10) {
 
-  document.write(' '+ i)
+//   document.write(' '+ i)
 
-  i++;
-}
+//   i++;
+// }
 
-sum = 0;
+// sum = 0;
 
-for (i = 1; i <= 50; i++) {
-  if (i % 3 == 0 && i % 5 == 0) {
-    sum += i;
-  }
-}
+// for (i = 1; i <= 50; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     sum += i;
+//   }
+// }
 
-document.write(sum);
+// document.write(sum);
 
 // do while loop//
 
-var i = 1
+// var i = 1
 
-do{
-  document.write(i)
-  i++
-} while (i <= 10)
+// do{
+//   document.write(i)
+//   i++
+// } while (i <= 10)
+
+/*
+ ternary operator in javascript
+ */
+
+var number = parseInt(prompt('Enter a number: '))
+var result =  number > 0 ? 'positive' : 'negative'
+document.write(result)
+
+var number1 = parseInt(prompt('Enter a First Number'))
+var number2 = parseInt(prompt('Enter a Second Number'))
+var number3 = parseInt(prompt('Enter a Third Number'))
+var result = number1 > number2 && number3 ? 'This is Big number (1) = ' + number1 : number2 > number1 && number3 ? 'This is Big number (2) = ' + number2 :'This is Big number (3) = ' + number3
+
+document.write(result)
