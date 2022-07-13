@@ -244,13 +244,47 @@
  ternary operator in javascript
  */
 
-var number = parseInt(prompt('Enter a number: '))
-var result =  number > 0 ? 'positive' : 'negative'
-document.write(result)
+// var number = parseInt(prompt('Enter a number: '))
+// var result =  number > 0 ? 'positive' : 'negative'
+// document.write(result)
 
-var number1 = parseInt(prompt('Enter a First Number'))
-var number2 = parseInt(prompt('Enter a Second Number'))
-var number3 = parseInt(prompt('Enter a Third Number'))
-var result = number1 > number2 && number3 ? 'This is Big number (1) = ' + number1 : number2 > number1 && number3 ? 'This is Big number (2) = ' + number2 :'This is Big number (3) = ' + number3
+// var number1 = parseInt(prompt('Enter a First Number'))
+// var number2 = parseInt(prompt('Enter a Second Number'))
+// var number3 = parseInt(prompt('Enter a Third Number'))
+// var result = number1 > number2 && number3 ? 'This is Big number (1) = ' + number1 : number2 > number1 && number3 ? 'This is Big number (2) = ' + number2 :'This is Big number (3) = ' + number3
 
-document.write(result)
+// document.write(result)
+
+/*
+ function in javascript
+ */
+
+ var x = parseInt(prompt('Enter First Input: '))
+ var y = parseInt(prompt('Enter Second Input: '))
+
+ function calculate(x, y) {
+  var sum = x + y;
+  document.write('Sum = ' + sum + '<br>')
+  var sub = x - y;
+  document.write('Sub = ' + sub + '<br>')
+  var multi = x * y;
+  document.write('Multi = ' + multi + '<br>')
+  var divide = x / y;
+  document.write('Divide = ' + divide + '<br>')
+ }
+
+ calculate(x, y)
+
+
+
+// IIFEs (Immediately Invocable Function Expressions)
+
+
+// (function display( ) {
+//   console.log('hello');
+// })()
+
+(function sum(x, y) {
+  console.log(x + y);
+})(15, 45)
+
