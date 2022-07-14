@@ -259,32 +259,104 @@
  function in javascript
  */
 
- var x = parseInt(prompt('Enter First Input: '))
- var y = parseInt(prompt('Enter Second Input: '))
+//  var x = parseInt(prompt('Enter First Input: '))
+//  var y = parseInt(prompt('Enter Second Input: '))
 
- function calculate(x, y) {
-  var sum = x + y;
-  document.write('Sum = ' + sum + '<br>')
-  var sub = x - y;
-  document.write('Sub = ' + sub + '<br>')
-  var multi = x * y;
-  document.write('Multi = ' + multi + '<br>')
-  var divide = x / y;
-  document.write('Divide = ' + divide + '<br>')
- }
+//  function calculate(x, y) {
+//   var sum = x + y;
+//   document.write('Sum = ' + sum + '<br>')
+//   var sub = x - y;
+//   document.write('Sub = ' + sub + '<br>')
+//   var multi = x * y;
+//   document.write('Multi = ' + multi + '<br>')
+//   var divide = x / y;
+//   document.write('Divide = ' + divide + '<br>')
+//  }
 
- calculate(x, y)
-
-
+//  calculate(x, y)
 
 // IIFEs (Immediately Invocable Function Expressions)
-
 
 // (function display( ) {
 //   console.log('hello');
 // })()
 
-(function sum(x, y) {
-  console.log(x + y);
-})(15, 45)
+// (function sum(x, y) {
+//   console.log(x + y);
+// })(15, 45)
 
+/*
+ Array in javascript
+ */
+
+//  var country1 = ['Bangladesh', 'India']
+//  var country2 = ['Pakistan', 'Thailand']
+
+// var country = country1.concat(country2)
+
+// console.log(country);
+
+// var num = [10, 24, 76, 86, 45, 87];
+// var sum = 0;
+// for (var i = 0; i < 6; i++) {
+//   console.log(num[i]);
+//   sum = sum + num[i]
+  
+// }
+
+// console.log(sum);
+
+// var num = new Array()
+// var sum = 0
+
+// for (var i = 0; i < 5; i++) {
+//   num[i] = parseInt(prompt('Enter a number: '))
+//   console.log(num[i]);
+//   sum += num[i]
+// }
+
+// console.log('sum = ' + sum);
+
+// Array methods
+// shift(), unshift(), splice(pos,noe,ele1,ele2...)
+//short(), reverse()
+
+var names = ['Anis', 'Rabeya', 'Kolpona']
+
+// shift opposite of pop
+// names.shift()
+// console.log(names);
+
+// unshift opposite of push
+// names.unshift('Bulbul')
+// console.log(names);
+
+// adding elements using splice
+
+// names.splice(2,1,'karim', 'Rahim')
+// console.log(names);
+
+//removing elements using splice
+
+// names.splice(1,2)
+// console.log(names);
+
+// console.log(names
+//   );
+
+//  var newArray =  names.slice(1)
+//  console.log(newArray);
+//  console.log(names);
+
+
+// var sortedName = names.sort()
+// var reverseName = names.reverse()
+// console.log(reverseName);
+// console.log(sortedName);
+
+var numbers = [20, 43, 3, 64, 64, 34]
+numbers.sort(function(a, b) {
+  return a - b 
+})
+
+console.log(numbers);
