@@ -301,7 +301,7 @@
 // for (var i = 0; i < 6; i++) {
 //   console.log(num[i]);
 //   sum = sum + num[i]
-  
+
 // }
 
 // console.log(sum);
@@ -321,7 +321,7 @@
 // shift(), unshift(), splice(pos,noe,ele1,ele2...)
 //short(), reverse()
 
-var names = ['Anis', 'Rabeya', 'Kolpona']
+// var names = ["Anis", "Rabeya", "Kolpona"];
 
 // shift opposite of pop
 // names.shift()
@@ -348,15 +348,158 @@ var names = ['Anis', 'Rabeya', 'Kolpona']
 //  console.log(newArray);
 //  console.log(names);
 
-
 // var sortedName = names.sort()
 // var reverseName = names.reverse()
 // console.log(reverseName);
 // console.log(sortedName);
 
-var numbers = [20, 43, 3, 64, 64, 34]
-numbers.sort(function(a, b) {
-  return a - b 
-})
+// var numbers = [20, 43, 3, 64, 64, 34]
+// numbers.sort(function(a, b) {
+//   return a - b
+// })
 
-console.log(numbers);
+// console.log(numbers);
+
+// Create a function called highestScore that will receive a 1d array called scores and return the highest score
+
+// var scores = [45, 34, 54, 64, 75, 34, 86];
+
+// function highestScore(scores) {
+//   var max = scores[0];
+//   for (var i = 1; i < scores.length; i++) {
+//     if (max < scores[i]) {
+//       max = scores[i];
+//     }
+//   }
+//   return max;
+// }
+
+// var maxScore = highestScore(scores);
+// console.log(maxScore);
+
+// var playersInfo = [
+//   ["Ashraful", 95],
+//   ["Mizan", 45],
+//   ["Rakib", 62],
+//   ["Neloy", 109],
+// ];
+
+// function highestRunScorer(playersInfo) {
+//   var highestScorer = playersInfo[0][0];
+//   var highestScore = playersInfo[0][1];
+
+//   for (i = 1; i < playersInfo.length; i++) {
+//     if (highestScore < playersInfo[i][1]) {
+//       highestScore = playersInfo[i][1];
+//       highestScorer = playersInfo[i][0];
+//     }
+//   }
+//  return highestScorer;
+// }
+
+// var name = highestRunScorer(playersInfo);
+// console.log(name);
+
+// How to create an object
+// How to print the value of an object
+// Adding a constructor
+
+// function Student(name, age, cgpa, lang) {
+//   this.name = name;
+//   this.age = age;
+//   this.cgpa = cgpa;
+//   this.lang = lang;
+
+//   this.display = function() {
+//     console.log(this.name);
+//     console.log(this.age);
+//     console.log(this.cgpa);
+//     console.log(this.lang);
+//   }
+// }
+
+// var student1 = new Student("Rakib", 21, 3.65, ["Bengali", "Hindi", "English"]);
+// var student2 = new Student("sakib", 24, 3.45, ["Bengali", "Urdu", "English"]);
+// var student3 = new Student("mohim", 23, 3.56, ["Bengali","English"]);
+// var student4 = new Student("Redoy", 24, 3.78, ["Bengali", "Portuguese", "English"]);
+
+// student1.display()
+
+// Guessing Game
+
+// var numOfWon = 0;
+// var numOfLost = 0;
+
+// for (i = 1; i < 5; i++) {
+//   var guessNumber = parseInt(prompt("Enter a number from 1 to 5 : "));
+
+//   var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+//   if (guessNumber == randomNumber) {
+//     console.log("You have Won");
+//     numOfWon++
+//   } else if (guessNumber > 5) {
+//     console.log('Please provide a valid number');
+//   } else {
+//     console.log("You Lost. Random number was :" + randomNumber);
+//     numOfLost++
+//   }
+// }
+
+// document.write('Number of won = ' + numOfWon + '<br>');
+// document.write('Number of lost = ' + numOfLost + '<br>');
+
+//------------ DOM -------------//
+
+//getElementById
+// var myHeading = document.getElementById('heading1');var myHeading2 = document.getElementById('heading2')
+// myHeading.innerHTML = 'hello'
+// myHeading2.innerHTML = 'good bye good bye'
+// var myPara = document.getElementById('para')
+
+// myPara.innerHTML = 'hey bro'
+
+// getElementById()
+// getElementsByTagName()
+// getElementsBYClassName()
+// querySelector()
+
+// document.querySelector('#pid').innerHTML = 'this is change'
+
+// document.querySelector('.heading1').innerHTML = 'heading changed'
+
+// document.querySelector('li a').innerHTML = 'new text'
+// document.querySelector('.my-div a').innerHTML = 'new link'
+// var myVar = document.querySelector("#img1");
+// function myMassage() {
+//   myVar.src = "img/4K Wallpapers By Sheri Sk (6).jpg";
+// }
+
+// function myMassage2() {
+//   myVar.src = "img/4K Wallpapers By Sheri Sk (7).jpg";
+// }
+
+
+
+var heading3 = document.createElement('h1')
+var text = document.createTextNode('This is heading 3')
+
+heading3.appendChild(text)
+
+var newDiv = document.getElementsByClassName('my-dev')[0];
+
+newDiv.appendChild(heading3)
+
+
+var heading2 = document.getElementsByTagName('h1')[1]
+
+newDiv.removeChild(heading2)
+
+
+
+var heading0 = document.createElement('h1')
+var text0 = document.createTextNode('This is heading 0')
+
+heading0.appendChild(text0)
+var heading1 = document.getElementsByTagName('h1')[0]
+newDiv.insertBefore(heading0, heading1)
