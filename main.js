@@ -479,27 +479,148 @@
 //   myVar.src = "img/4K Wallpapers By Sheri Sk (7).jpg";
 // }
 
+// var heading3 = document.createElement('h1')
+// var text = document.createTextNode('This is heading 3')
+
+// heading3.appendChild(text)
+
+// var newDiv = document.getElementsByClassName('my-dev')[0];
+
+// newDiv.appendChild(heading3)
+
+// var heading2 = document.getElementsByTagName('h1')[1]
+
+// newDiv.removeChild(heading2)
+
+// var heading0 = document.createElement('h1')
+// var text0 = document.createTextNode('This is heading 0')
+
+// heading0.appendChild(text0)
+// var heading1 = document.getElementsByTagName('h1')[0]
+// newDiv.insertBefore(heading0, heading1)
+
+// function myFunction() {
+//   const element = document.getElementById('myList').children[0];
+
+//   const newNode = document.createTextNode('Water');
+
+//   element.replaceChild(newNode, element.childNodes[0])
+// }
+
+//  var student = document.querySelector('.studentList')
+
+//  var studentA = student.children[2];
+
+// const studentA = document.querySelector('li')
+
+// const studentList = studentA.parentElement
+
+// const studentA = document.querySelector('li')
+
+// const studentB = studentA.nextElementSibling
+
+// const studentC = studentB.nextElementSibling
+
+// const studentD = studentC.previousElementSibling
+
+// var photos = ['img/4K Wallpapers By Sheri Sk (6).jpg', 'img/4K Wallpapers By Sheri Sk (7).jpg', 'img/4K Wallpapers By Sheri Sk (55).jpg', 'img/4K Wallpapers By Sheri Sk (75).jpg']
+
+// var imgTag = document.querySelector('img')
+
+//  var count = 0;
+
+// function next() {
+//   count++;
+
+//   if( count >= photos.length) {
+//     count = 0
+//     imgTag.src = photos[count]
+//   } else {
+//     imgTag.src = photos[count]
+//   }
+
+// }
+
+// function prev() {
+//   count--;
+
+//   if( count < 0) {
+//     count = photos.length - 1;
+//     imgTag.src = photos[count]
+//   } else {
+//     imgTag.src = photos[count]
+//   }
+// }
+
+// function addStyle() {
+//   var myVar = document.querySelector('#paraId')
+//   myVar.classList.add('paraStyle')
+// }
+
+// function remStyle() {
+//   var myVar = document.querySelector('#paraId')
+//   myVar.classList.remove('paraStyle')
+// }
+
+// document.querySelector('#myButton').addEventListener('click', function() {
+//   alert('Hello')
+// })
+
+// var heading1 = document.querySelector("h1");
+
+// heading1.addEventListener("mouseover", function () {
+//   heading1.classList.add("paraStyle");
+// });
+
+// heading1.addEventListener("mouseout", function () {
+//   heading1.classList.remove("paraStyle");
+// });
+
+// var lan = document.querySelectorAll('.myButton').length
+
+// for(i = 0; i < lan; i++) {
+//   document.querySelectorAll(".myButton")[i].addEventListener('click', function() {
+
+//     var text = this.innerHTML ;
+//     document.querySelector('h1').innerHTML = text + " is clicked"
+//   })
+// }
 
 
-var heading3 = document.createElement('h1')
-var text = document.createTextNode('This is heading 3')
+// function toCelsius (fahrenheit) {
+//   return (5/7) * (fahrenheit - 32)
+// }
 
-heading3.appendChild(text)
+// console.log(toCelsius(100));
 
-var newDiv = document.getElementsByClassName('my-dev')[0];
+// const fruits = ['banana', 'orange', 'apple', 'mango']
 
-newDiv.appendChild(heading3)
+// let flen = fruits.length
 
+// text = "<ul>";
 
-var heading2 = document.getElementsByTagName('h1')[1]
+// for (let i = 0; i < flen; i++) {
+//   text += "<li>" + fruits[i] + "</li>"
+// }
 
-newDiv.removeChild(heading2)
+// text += "</ul>"
 
+const form = document.querySelector('form')
+const name = form.querySelector('#name')
+const email = form.querySelector('#email')
+const password = form.querySelector('#password')
 
+form.addEventListener('submit', formHandler)
 
-var heading0 = document.createElement('h1')
-var text0 = document.createTextNode('This is heading 0')
-
-heading0.appendChild(text0)
-var heading1 = document.getElementsByTagName('h1')[0]
-newDiv.insertBefore(heading0, heading1)
+function formHandler(e) {
+  e.preventDefault();
+  const userInfo = {
+    name: name.value,
+    email: email.value,
+    password: password.value
+  }
+  console.log(userInfo);
+  name.value = ''
+  email.value = ''
+  password.value = ''
+}
