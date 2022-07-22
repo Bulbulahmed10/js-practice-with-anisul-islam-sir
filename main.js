@@ -716,6 +716,75 @@
 //   })
 // }) 
 
+// const textarea = document.querySelector('textarea')
+
+// textarea.addEventListener('keydown', function() {
+//   console.log('keydown');
+// })
+// textarea.addEventListener('keypress', function() {
+//   console.log('keypress');
+// })
+// textarea.addEventListener('keyup', function(e) {
+//   // console.log(e.shiftKey);
+
+//   if(e.shiftKey) {
+//     console.log('shift+' + e.key);
+//   }
+// })
+
+// const input = document.querySelector('input')
+
+// input.addEventListener('blur', function() {
+//   console.log('blur is occurred');
+// })
+
+// input.addEventListener('focus', function() {
+//   console.log('focus is occurred');
+// })
+
+// input.addEventListener('focusin', function() {
+//   console.log('focusin is occurred');
+// })
+
+// input.addEventListener('focusout', function() {
+//   console.log('focusout is occurred');
+// })
+
+// const input = document.querySelector('input')
+
+// const paragraph = document.querySelector('p')
+
+// input.addEventListener('copy', function() {
+//   paragraph.innerText = 'You have copied'
+// })
+
+// input.addEventListener('cut', function() {
+//   paragraph.innerText = 'You have cut'
+  
+// })
+
+// input.addEventListener('paste', function() {
+//   paragraph.innerText = 'You have paste'
+// })
+
+const div = document.querySelector('div')
+const p = document.querySelector('p')
+
+p.addEventListener('dragstart', function(e) {
+  e.dataTransfer.setData('Text', e.target.id)
+})
+
+div.addEventListener('dragover', function(e) {
+  e.preventDefault()
+})
+
+div.addEventListener('drop', function(e) {
+  let id = e.dataTransfer.getData('Text')
+  div.appendChild(document.getElementById(id))
+  e.preventDefault()
+})
+
+
 
 
 
