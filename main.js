@@ -605,22 +605,123 @@
 
 // text += "</ul>"
 
-const form = document.querySelector('form')
-const name = form.querySelector('#name')
-const email = form.querySelector('#email')
-const password = form.querySelector('#password')
+// const form = document.querySelector('form')
+// const name = form.querySelector('#name')
+// const email = form.querySelector('#email')
+// const password = form.querySelector('#password')
 
-form.addEventListener('submit', formHandler)
+// form.addEventListener('submit', formHandler)
 
-function formHandler(e) {
-  e.preventDefault();
-  const userInfo = {
-    name: name.value,
-    email: email.value,
-    password: password.value
-  }
-  console.log(userInfo);
-  name.value = ''
-  email.value = ''
-  password.value = ''
-}
+// function formHandler(e) {
+//   e.preventDefault();
+//   const userInfo = {
+//     name: name.value,
+//     email: email.value,
+//     password: password.value
+//   }
+//   console.log(userInfo);
+//   name.value = ''
+//   email.value = ''
+//   password.value = ''
+// }
+
+// const video = document.querySelector('video')
+
+// video.addEventListener('canplay', function() {
+//   console.log('canplay');
+// });
+
+// video.addEventListener('play', function() {
+//   console.log('play');
+// });
+
+// video.addEventListener('pause', function() {
+//   console.log('pause');
+// })
+
+// video.addEventListener('playing', function() {
+//   console.log('playing');
+// })
+
+// video.addEventListener('ended', function() {
+//   console.log('Thanks for Watching');
+// })
+
+// video.addEventListener('volumechange', function() {
+//   console.log('volumechange');
+// })
+
+// window.addEventListener("resize", function() {
+//  const width = this.window.outerWidth;
+//  const height = this.window.outerHeight;
+//  console.log(`height: ${height}, width: ${width}`);
+// });
+
+// const details = document.querySelector('details')
+
+// details.addEventListener('toggle', function(e){
+//   console.log('toggle');
+//   console.log(e.target.open);
+// })
+
+
+// const div = document.querySelector('div')
+
+// div.addEventListener('click', function(e) {
+// //  console.log(e.target.id);
+// //  console.log(e.target.className); 
+
+//     console.log(e.target.textContent);
+// })
+
+
+// div.addEventListener('dblclick', function() {
+//   console.log('dblclick');
+// })
+
+// div.addEventListener('mouseup', function() {
+//   console.log('mouseup');
+// })
+// div.addEventListener('mousedown', function() {
+//   console.log('mousedown');
+// })
+
+// div.addEventListener('mouseenter', function() {
+//   console.log('mouseenter');
+// })
+
+// div.addEventListener('mouseleave', function() {
+//   console.log('mouseleave');
+// })
+
+// div.addEventListener('mousemove', function(e) {
+//   console.log('clintX: ' + e.clientX + ', clintY: ' + e.clientY);
+// })
+
+// div.addEventListener('mousemove', function(e) {
+//   console.log('offsetX: ' + e.offsetX + ', offsetY: ' + e.offsetY);
+// })
+
+// div.addEventListener('mouseover', function() {
+//   console.log('mouseover');
+// })
+
+// const myButton = document.querySelectorAll('.btn')
+
+// console.log(myButton);
+
+// Array.from(myButton).map((button) => {
+//   button.addEventListener('click', function(e) {
+//     console.log(e.target.innerText);
+//   })
+// }) 
+
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,13 @@
   text-transform: uppercase;
 } */
 
-div{
+/* div{
   margin-bottom: 10px;
+} */
+
+div{
+  background-color: brown;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
 }
