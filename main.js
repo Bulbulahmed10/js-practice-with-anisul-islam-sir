@@ -877,14 +877,14 @@ const massage = document.querySelector(".massage");
 //   }, 1000);
 // }
 
-saveButton.addEventListener("click", startClock);
+// saveButton.addEventListener("click", startClock);
 
 // function startClock() {
 //   let date = new Date()
 //   let hours = date.getHours;
 //   let minutes = date.getMinutes;
 //   minutes = formatTime(minutes);
- 
+
 //   let seconds = date.getSeconds;
 //   seconds = formatTime(seconds);
 //   let time = hours + ":" + minutes + ":" + seconds;
@@ -900,3 +900,47 @@ saveButton.addEventListener("click", startClock);
 //   }
 //   return value;
 // }
+
+// try {
+//   alert("hi everyone");
+//   alert(x);
+
+// } catch (error) {
+//   console.log("inside catch block");
+// }finally{
+//   alert("bye everyone");
+
+// }
+
+// document.querySelector("#checkButton").addEventListener("click", function () {
+//   var num = document.querySelector("#numTextField").value;
+
+//   try {
+//     if (num < 5) {
+//       throw "input is too low";
+//     } else if (num > 10) {
+//       throw "input is too high";
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// });
+
+const c = document.querySelector("#myCanvas");
+
+var ctx = c.getContext("2d");
+
+ctx.lineWidth = 3;
+ctx.strokeStyle = "black";
+ctx.strokeRect(10, 10, 380, 280);
+ctx.fillStyle = "green";
+ctx.fillRect(12, 12, 376, 278);
+
+var centerX = c.width / 2;
+var centerY = c.height / 2;
+
+ctx.beginPath();
+ctx.arc(centerX, centerY, 70, 0, 2 * Math.PI, false);
+ctx.fillStyle = "red";
+ctx.fill();
+ctx.stroke();
