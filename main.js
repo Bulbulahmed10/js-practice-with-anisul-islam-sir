@@ -789,28 +789,114 @@ console.clear();
 // console.log(location.port);
 // console.log(location.pathname);
 
-let locationDiv = document.querySelector(".location-div");
+// let locationDiv = document.querySelector(".location-div");
 
-console.log(locationDiv);
+// console.log(locationDiv);
 
-var p1 = locationDiv.children[0]
-p1.textContent = location.href
+// var p1 = locationDiv.children[0]
+// p1.textContent = location.href
 
-var p2 = locationDiv.children[1]
-p2.textContent = location.hostname
+// var p2 = locationDiv.children[1]
+// p2.textContent = location.hostname
 
-var p3 = locationDiv.children[2]
-p3.textContent = location.protocol
+// var p3 = locationDiv.children[2]
+// p3.textContent = location.protocol
 
-var p4 = locationDiv.children[3]
-p4.textContent = location.port
+// var p4 = locationDiv.children[3]
+// p4.textContent = location.port
 
-var p5 = locationDiv.children[4]
-p5.textContent = location.pathname
+// var p5 = locationDiv.children[4]
+// p5.textContent = location.pathname
 
-const button = document.getElementById('visit-button')
+// const button = document.getElementById('visit-button')
 
+// button.addEventListener('click', function() {
+//   location.assign("https://www.studywithanis.com")
+// })
 
-button.addEventListener('click', function() {
-  location.assign("https://www.studywithanis.com")
-})
+// function deleteSomething() {
+//   let value = confirm("Do you want to delete?")
+//   if(value) {
+//     console.log('Deleted');
+//   } else {
+//     console.log('Not Deleted');
+//   }
+// }
+
+// deleteSomething()
+
+// function welcomeMassage() {
+//   var h1 = document.createElement('h1')
+//   let text;
+
+//   var name = prompt('Enter Your Name: ')
+//   if(name == null || name == '') {
+//     text = "No Name Found"
+//   } else {
+//     text = "Welcome " + name;
+//   }
+//   var textNode = document.createTextNode(text)
+//   h1.appendChild(textNode)
+//   document.body.appendChild(h1)
+// }
+
+// welcomeMassage()
+
+// setTimeout(() => {
+//   console.log('Hi');
+// }, 2000);
+
+// setTimeout(display, 2000)
+
+// function display() {
+//   console.log("display function");
+// }
+
+const saveButton = document.querySelector("#save-btn");
+const massage = document.querySelector(".massage");
+
+// saveButton.addEventListener('click', saveUser)
+
+// function saveUser() {
+//   massage.textContent = "User registration successful"
+
+//   setTimeout(() => {
+//     massage.textContent = ''
+//   }, 1000);
+// }
+
+// saveButton.addEventListener('click', displayCount)
+
+// function displayCount() {
+//   let count = 1
+//   massage.textContent = count;
+
+//   setInterval(() => {
+//     count++;
+//     massage.textContent = count;
+//   }, 1000);
+// }
+
+saveButton.addEventListener("click", startClock);
+
+// function startClock() {
+//   let date = new Date()
+//   let hours = date.getHours;
+//   let minutes = date.getMinutes;
+//   minutes = formatTime(minutes);
+ 
+//   let seconds = date.getSeconds;
+//   seconds = formatTime(seconds);
+//   let time = hours + ":" + minutes + ":" + seconds;
+
+//   massage.textContent = time;
+
+//   setInterval(startClock, 1000);
+// }
+
+// function formatTime(value) {
+//   if (value < 10) {
+//     value = "0" + value;
+//   }
+//   return value;
+// }
