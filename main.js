@@ -586,7 +586,6 @@
 //   })
 // }
 
-
 // function toCelsius (fahrenheit) {
 //   return (5/7) * (fahrenheit - 32)
 // }
@@ -664,16 +663,14 @@
 //   console.log(e.target.open);
 // })
 
-
 // const div = document.querySelector('div')
 
 // div.addEventListener('click', function(e) {
 // //  console.log(e.target.id);
-// //  console.log(e.target.className); 
+// //  console.log(e.target.className);
 
 //     console.log(e.target.textContent);
 // })
-
 
 // div.addEventListener('dblclick', function() {
 //   console.log('dblclick');
@@ -714,7 +711,7 @@
 //   button.addEventListener('click', function(e) {
 //     console.log(e.target.innerText);
 //   })
-// }) 
+// })
 
 // const textarea = document.querySelector('textarea')
 
@@ -760,37 +757,60 @@
 
 // input.addEventListener('cut', function() {
 //   paragraph.innerText = 'You have cut'
-  
+
 // })
 
 // input.addEventListener('paste', function() {
 //   paragraph.innerText = 'You have paste'
 // })
 
-const div = document.querySelector('div')
-const p = document.querySelector('p')
+// const div = document.querySelector('div')
+// const p = document.querySelector('p')
 
-p.addEventListener('dragstart', function(e) {
-  e.dataTransfer.setData('Text', e.target.id)
+// p.addEventListener('dragstart', function(e) {
+//   e.dataTransfer.setData('Text', e.target.id)
+// })
+
+// div.addEventListener('dragover', function(e) {
+//   e.preventDefault()
+// })
+
+// div.addEventListener('drop', function(e) {
+//   let id = e.dataTransfer.getData('Text')
+//   div.appendChild(document.getElementById(id))
+//   e.preventDefault()
+// })
+
+console.clear();
+
+// console.log(location.href)
+// console.log(location.protocol);
+// console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.pathname);
+
+let locationDiv = document.querySelector(".location-div");
+
+console.log(locationDiv);
+
+var p1 = locationDiv.children[0]
+p1.textContent = location.href
+
+var p2 = locationDiv.children[1]
+p2.textContent = location.hostname
+
+var p3 = locationDiv.children[2]
+p3.textContent = location.protocol
+
+var p4 = locationDiv.children[3]
+p4.textContent = location.port
+
+var p5 = locationDiv.children[4]
+p5.textContent = location.pathname
+
+const button = document.getElementById('visit-button')
+
+
+button.addEventListener('click', function() {
+  location.assign("https://www.studywithanis.com")
 })
-
-div.addEventListener('dragover', function(e) {
-  e.preventDefault()
-})
-
-div.addEventListener('drop', function(e) {
-  let id = e.dataTransfer.getData('Text')
-  div.appendChild(document.getElementById(id))
-  e.preventDefault()
-})
-
-
-
-
-
-
-
-
-
-
-
