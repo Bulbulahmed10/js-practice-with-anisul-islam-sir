@@ -781,8 +781,6 @@
 //   e.preventDefault()
 // })
 
-console.clear();
-
 // console.log(location.href)
 // console.log(location.protocol);
 // console.log(location.hostname);
@@ -852,8 +850,8 @@ console.clear();
 //   console.log("display function");
 // }
 
-const saveButton = document.querySelector("#save-btn");
-const massage = document.querySelector(".massage");
+// const saveButton = document.querySelector("#save-btn");
+// const massage = document.querySelector(".massage");
 
 // saveButton.addEventListener('click', saveUser)
 
@@ -926,21 +924,186 @@ const massage = document.querySelector(".massage");
 //   }
 // });
 
-const c = document.querySelector("#myCanvas");
+// const c = document.querySelector("#myCanvas");
 
-var ctx = c.getContext("2d");
+// var ctx = c.getContext("2d");
 
-ctx.lineWidth = 3;
-ctx.strokeStyle = "black";
-ctx.strokeRect(10, 10, 380, 280);
-ctx.fillStyle = "green";
-ctx.fillRect(12, 12, 376, 278);
+// ctx.lineWidth = 3;
+// ctx.strokeStyle = "black";
+// ctx.strokeRect(10, 10, 380, 280);
+// ctx.fillStyle = "green";
+// ctx.fillRect(12, 12, 376, 278);
 
-var centerX = c.width / 2;
-var centerY = c.height / 2;
+// var centerX = c.width / 2;
+// var centerY = c.height / 2;
 
-ctx.beginPath();
-ctx.arc(centerX, centerY, 70, 0, 2 * Math.PI, false);
-ctx.fillStyle = "red";
-ctx.fill();
-ctx.stroke();
+// ctx.beginPath();
+// ctx.arc(centerX, centerY, 70, 0, 2 * Math.PI, false);
+// ctx.fillStyle = "red";
+// ctx.fill();
+// ctx.stroke();
+
+// function message(text = "Hello this is default parameter") {
+//   console.log(`${text}`);
+// }
+// message()
+
+// function sum (x, y, ...z) {
+//   console.log(`x = ${x}, y = ${y}, z = ${z}`);
+// }
+
+// sum(10,20,30,50,54)
+
+// function addNumbers(x, y, z) {
+//   return x + y + z;
+// }
+
+// let numbers = [1, 2, 3]
+// console.log(addNumbers(...numbers));
+// let numbers1 = [5, 6, ...numbers]
+// console.log(numbers1);
+
+// let numbers1 = [1,2,3]
+// let numbers2 = [4,5,6]
+
+// let numbers = [...numbers1, ...numbers2]
+// console.log(
+//   numbers
+// );
+
+// let p1 = {
+//   name : "Bulbul Ahmed",
+//   age : 23
+// }
+
+// let p2 = {
+//   nationality : "Bangladesh",
+//   occupation : "Student"
+// }
+// let p = {...p1, ...p2}
+
+// console.log(p);
+
+// function studentInfo1 (name, age) {
+//   return {
+//     name,
+//     age,
+
+//   }
+// }
+// console.log(studentInfo1("Rakibul Islam", 29));
+
+// let message = {
+//   'body name'() {
+//     return `Hi, I am object function`
+//   }
+// }
+
+// console.log(message['body name']());
+
+// const names = ["s1, s2, s3"]
+
+// for(let name of names) {
+//   console.log(name);
+// }
+
+// let students = {
+//   ID : 101,
+//   name : 'Bulbul Ahmed',
+//   cgpa : 3.91
+
+// }
+
+// for (let x in students) {
+//   console.log(`${x} : ${students[x]}`);
+// }
+
+// var number = [12, 32, 43, 53]
+// var squareNumbers = []
+// number.forEach(myFunction)
+
+// function myFunction(x) {
+//   squareNumbers.push(x*x)
+// }
+
+// console.log(squareNumbers);
+
+// var numbers = [24,43, 53, 54, 34]
+
+// numbers.forEach(function(x, index, arr) {
+//   arr[index] = x + 5
+
+// })
+
+// console.log(numbers);
+
+// var numbers = [1, 43, 53, 323, 53, 634, 43, 63, 64,345, 644, 33,643 , 645];
+
+// var squareNumbers = numbers.map(function (x) {
+//  return x * x;
+// });
+
+// console.log(squareNumbers);
+// console.log(numbers);
+
+// var squareNumbers = numbers.filter(function(x) {
+//   return x > 325
+// })
+
+// console.log(squareNumbers);
+
+console.clear();
+
+// function display () {
+//   console.log("I am display 1");
+// }
+
+// display()
+
+// const display2 = () => console.log("I am display2");
+
+// display2()
+
+// function message1() {
+//   return "HI i am message 1"
+// }
+
+// const message3 = () => "Hi i am massage 2"
+
+// console.log(message1());
+// console.log(message3());
+
+var persons = [
+  {
+    id: 101,
+    name: "Bulbul Ahmed",
+    gpa: 3.65,
+  },
+  {
+    id: 102,
+    name: "Akhi",
+    gpa: 3.56,
+  },
+  {
+    id: 103,
+    name: "Rohksana",
+    gpa: 3.98,
+  },
+];
+
+// function personsName() {
+//   return persons
+//     .filter(function (x) {
+//       return x.gpa > 3.6;
+//     })
+//     .map(function (y) {
+//       return y.name;
+//     });
+// }
+
+
+const personsName2 = () => persons.filter((x) => x.gpa > 3.60).map((y) => y.name)
+
+
+console.log(personsName2());
+
